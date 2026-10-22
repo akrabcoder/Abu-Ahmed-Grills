@@ -1,0 +1,1062 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="مشويات أبو أحمد في ستانلي، الإسكندرية. اكتشف تجربة المشويات والمنيو وتواصل مع المطعم.">
+<title>مشويات أبو أحمد | نار أصيلة وإطلالة على البحر</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black:#0b0b0b;
+  --dark:#11100e;
+  --gold:#c8a45c;
+  --gold-light:#f0d18d;
+  --cream:#f5efe6;
+  --muted:#bdb5a8;
+  --line:rgba(200,164,92,.35);
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:85px;
+}
+
+body {
+  background:var(--black);
+  color:var(--cream);
+  font-family:'Cairo',sans-serif;
+  line-height:1.8;
+  overflow-x:hidden;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+button {
+  font:inherit;
+  cursor:pointer;
+}
+
+img {
+  max-width:100%;
+  display:block;
+}
+
+.container {
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+.gold {
+  color:var(--gold-light);
+}
+
+/* HEADER */
+
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(8,8,8,.96);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav {
+  min-height:78px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--gold-light);
+  font-size:1.15rem;
+  font-weight:900;
+  white-space:nowrap;
+  line-height:1.3;
+}
+
+.logo-symbol {
+  font-size:2.2rem;
+}
+
+.logo small {
+  display:block;
+  color:var(--cream);
+  font-family:'Playfair Display',serif;
+  font-size:.63rem;
+  letter-spacing:2px;
+  text-align:center;
+}
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:23px;
+  font-size:.88rem;
+  font-weight:700;
+}
+
+.nav-links a {
+  transition:color .25s;
+}
+
+.nav-links a:hover {
+  color:var(--gold-light);
+}
+
+.btn {
+  min-height:46px;
+  padding:10px 23px;
+  border-radius:50px;
+  border:1px solid var(--gold);
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.btn:hover {
+  transform:translateY(-3px);
+}
+
+.btn-gold {
+  background:linear-gradient(135deg,#f3d38e,#b78b3f);
+  color:#17110a;
+  border-color:transparent;
+}
+
+.btn-outline {
+  color:var(--cream);
+  background:rgba(0,0,0,.3);
+}
+
+.menu-toggle {
+  display:none;
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:5px 12px;
+  color:var(--gold-light);
+  background:transparent;
+  font-size:1.4rem;
+}
+
+/* HERO */
+
+.hero {
+  position:relative;
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  border-bottom:1px solid var(--gold);
+  background:#10100f;
+}
+
+.hero-image {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 55%;
+}
+
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(270deg,
+      rgba(5,5,5,.96) 0%,
+      rgba(5,5,5,.85) 30%,
+      rgba(5,5,5,.45) 57%,
+      rgba(5,5,5,.1) 100%);
+}
+
+.hero-content {
+  position:relative;
+  z-index:2;
+  max-width:720px;
+  padding:80px 0;
+}
+
+.eyebrow {
+  color:var(--gold-light);
+  font-size:.9rem;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.hero h1 {
+  font-size:clamp(2.7rem,6vw,5.1rem);
+  font-weight:900;
+  line-height:1.25;
+  margin:15px 0 18px;
+}
+
+.hero h1 span {
+  display:block;
+  color:var(--gold-light);
+}
+
+.hero p {
+  color:#e8dfd1;
+  font-size:1.1rem;
+  margin-bottom:28px;
+}
+
+.hero-buttons {
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+}
+
+.hero-note {
+  margin-top:35px;
+  color:#d2c5af;
+  font-size:.85rem;
+}
+
+/* TRUST BAR */
+
+.trust-bar {
+  background:linear-gradient(90deg,#0c0b09,#19140d,#0c0b09);
+  border-bottom:1px solid var(--line);
+}
+
+.trust-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  padding:18px 0;
+}
+
+.trust-item {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  padding:5px 12px;
+}
+
+.trust-item + .trust-item {
+  border-right:1px solid var(--line);
+}
+
+.trust-icon {
+  color:var(--gold-light);
+  font-size:1.8rem;
+}
+
+.trust-item strong {
+  display:block;
+  font-size:.97rem;
+}
+
+.trust-item small {
+  color:var(--muted);
+  font-size:.8rem;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+  padding:82px 0;
+}
+
+.section-heading {
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 40px;
+}
+
+.section-heading h2 {
+  font-size:clamp(2rem,4vw,3rem);
+  line-height:1.35;
+  color:var(--gold-light);
+  margin:8px 0;
+}
+
+.section-heading p {
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.gold-line {
+  width:75px;
+  height:2px;
+  background:var(--gold);
+  margin:16px auto;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:48px;
+}
+
+.about-photo {
+  position:relative;
+  padding:8px;
+  border:1px solid var(--gold);
+  border-radius:24px 5px 24px 5px;
+}
+
+.about-photo img {
+  width:100%;
+  height:370px;
+  object-fit:cover;
+  border-radius:17px 3px 17px 3px;
+}
+
+.photo-tag {
+  position:absolute;
+  bottom:22px;
+  left:22px;
+  background:#0b0b0bee;
+  border:1px solid var(--gold);
+  color:var(--gold-light);
+  border-radius:30px;
+  padding:6px 17px;
+  font-family:'Playfair Display',serif;
+}
+
+.about-text h2 {
+  font-size:2.3rem;
+  line-height:1.4;
+  margin:9px 0 18px;
+}
+
+.about-text p {
+  color:#d1c8bb;
+  margin-bottom:15px;
+}
+
+/* MENU */
+
+.menu-section {
+  background:
+    radial-gradient(ellipse at top,#21190d 0%,#0b0b0b 65%);
+}
+
+.menu-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:19px;
+}
+
+.menu-card {
+  background:#12110f;
+  border:1px solid var(--line);
+  border-radius:17px;
+  overflow:hidden;
+  transition:transform .3s,border-color .3s;
+}
+
+.menu-card:hover {
+  transform:translateY(-6px);
+  border-color:var(--gold-light);
+}
+
+.menu-card img {
+  width:100%;
+  height:205px;
+  object-fit:cover;
+  transition:transform .5s;
+}
+
+.menu-card:hover img {
+  transform:scale(1.04);
+}
+
+.card-content {
+  padding:17px;
+}
+
+.card-content h3 {
+  color:var(--gold-light);
+  font-size:1.15rem;
+  margin-bottom:4px;
+}
+
+.card-content p {
+  color:var(--muted);
+  font-size:.86rem;
+}
+
+/* FEATURE BANNER */
+
+.feature {
+  position:relative;
+  min-height:340px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:
+    linear-gradient(rgba(0,0,0,.76),rgba(0,0,0,.83)),
+    url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1600&q=80')
+    center/cover;
+  background-attachment:fixed;
+}
+
+.feature-content {
+  max-width:750px;
+  padding:20px;
+}
+
+.feature h2 {
+  font-size:clamp(2rem,4vw,3.2rem);
+  line-height:1.4;
+  color:var(--gold-light);
+  margin:12px 0;
+}
+
+.feature p {
+  color:#eee5d8;
+  margin-bottom:25px;
+}
+
+/* CONTACT */
+
+.contact-section {
+  background:#0d0c0a;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.contact-card {
+  border:1px solid var(--line);
+  background:linear-gradient(135deg,#17140f,#10100e);
+  padding:28px;
+  border-radius:18px;
+}
+
+.contact-card h3 {
+  color:var(--gold-light);
+  font-size:1.35rem;
+  margin-bottom:17px;
+}
+
+.contact-row {
+  display:flex;
+  align-items:flex-start;
+  gap:13px;
+  margin:16px 0;
+  color:#ded5c8;
+}
+
+.contact-row span:first-child {
+  color:var(--gold-light);
+  font-size:1.2rem;
+}
+
+.map-panel {
+  min-height:250px;
+  border:1px dashed var(--gold);
+  border-radius:13px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:25px;
+  background:linear-gradient(140deg,#16252a,#10100e);
+}
+
+.map-panel h3 {
+  margin-bottom:5px;
+}
+
+.map-panel p {
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+/* FOOTER */
+
+footer {
+  background:#070706;
+  border-top:1px solid var(--line);
+  padding:28px 0;
+}
+
+.footer-inner {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.footer-copy {
+  color:var(--muted);
+  font-size:.85rem;
+  text-align:center;
+}
+
+.footer-links {
+  display:flex;
+  gap:13px;
+}
+
+.footer-links a {
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  color:var(--gold-light);
+}
+
+.disclaimer {
+  text-align:center;
+  color:#958b7d;
+  font-size:.78rem;
+  margin-top:22px;
+}
+
+.reveal {
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .7s,transform .7s;
+}
+
+.reveal.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px) {
+  .nav-links {
+    gap:13px;
+    font-size:.8rem;
+  }
+
+  .nav > .btn {
+    display:none;
+  }
+
+  .menu-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .about-grid {
+    gap:27px;
+  }
+}
+
+@media(max-width:760px) {
+  .nav {
+    min-height:70px;
+  }
+
+  .menu-toggle {
+    display:block;
+  }
+
+  .nav-links {
+    display:none;
+    position:absolute;
+    top:70px;
+    right:0;
+    left:0;
+    padding:12px 5%;
+    background:#0b0b0b;
+    border-bottom:1px solid var(--line);
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+  }
+
+  .nav-links.open {
+    display:flex;
+  }
+
+  .nav-links a {
+    padding:10px 0;
+    border-bottom:1px solid #ffffff0d;
+    font-size:.95rem;
+  }
+
+  .hero {
+    min-height:530px;
+  }
+
+  .hero::after {
+    background:linear-gradient(
+      0deg,
+      rgba(5,5,5,.94) 0%,
+      rgba(5,5,5,.68) 52%,
+      rgba(5,5,5,.24) 100%
+    );
+  }
+
+  .hero-content {
+    padding:80px 0 55px;
+  }
+
+  .hero h1 {
+    font-size:clamp(2.6rem,10vw,4rem);
+  }
+
+  .trust-grid {
+    grid-template-columns:1fr;
+    padding:7px 0;
+  }
+
+  .trust-item {
+    justify-content:flex-start;
+    padding:11px 5px;
+  }
+
+  .trust-item + .trust-item {
+    border-right:0;
+    border-top:1px solid var(--line);
+  }
+
+  section {
+    padding:60px 0;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns:1fr;
+  }
+
+  .about-photo img {
+    height:290px;
+  }
+
+  .about-text h2 {
+    font-size:1.9rem;
+  }
+
+  .feature {
+    background-attachment:scroll;
+  }
+
+  .footer-inner {
+    flex-direction:column;
+  }
+}
+
+@media(max-width:430px) {
+  .logo {
+    font-size:1rem;
+  }
+
+  .logo-symbol {
+    font-size:1.8rem;
+  }
+
+  .menu-grid {
+    gap:11px;
+  }
+
+  .menu-card img {
+    height:140px;
+  }
+
+  .card-content {
+    padding:12px;
+  }
+
+  .card-content h3 {
+    font-size:1rem;
+  }
+
+  .card-content p {
+    font-size:.78rem;
+  }
+
+  .hero-buttons .btn {
+    padding:10px 17px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    scroll-behavior:auto!important;
+    transition:none!important;
+  }
+
+  .reveal {
+    opacity:1;
+    transform:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a class="logo" href="#home">
+      <span class="logo-symbol">♨</span>
+      <span>
+        مشويات أبو أحمد
+        <small>ABU AHMED GRILLS</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="فتح القائمة"
+      aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن المطعم</a>
+      <a href="#menu">المنيو</a>
+      <a href="#experience">تجربة المكان</a>
+      <a href="#contact">الموقع والتواصل</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-outline">تواصل معنا ↗</a>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <img class="hero-image"
+      src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=85"
+      alt="مشويات شهية على الفحم">
+
+    <div class="container">
+      <div class="hero-content reveal">
+
+        <div class="eyebrow">طعم أصيل • أجواء مختلفة</div>
+
+        <h1>
+          نار أصيلة...
+          <span>وإطلالة على البحر</span>
+        </h1>
+
+        <p>مشويات أبو أحمد — ستانلي، الإسكندرية</p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-gold" href="#contact">اطلب الآن ♨</a>
+          <a class="btn btn-outline" href="#menu">شوف المنيو ☰</a>
+        </div>
+
+        <div class="hero-note">
+          نكهة المشويات • أجواء الإسكندرية • لمة حلوة
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container trust-grid">
+
+      <div class="trust-item">
+        <span class="trust-icon">♨</span>
+        <div>
+          <strong>مشويات على الفحم</strong>
+          <small>نكهة تستحق التجربة</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">✦</span>
+        <div>
+          <strong>ستانلي، الإسكندرية</strong>
+          <small>أجواء البحر والمدينة</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span class="trust-icon">⌖</span>
+        <div>
+          <strong>تواصل بسهولة</strong>
+          <small>اسأل عن الطلب والحجز</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+
+      <div class="about-photo reveal">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
+          alt="أجواء مطعم">
+        <span class="photo-tag">Stanley • Alexandria</span>
+      </div>
+
+      <div class="about-text reveal">
+        <div class="eyebrow">حكاية الطعم</div>
+        <h2>كل تفصيلة ليها <span class="gold">طعم</span></h2>
+        <div class="gold-line" style="margin:15px 0"></div>
+
+        <p>
+          فيه أكلات بتجمع الناس على ترابيزة واحدة،
+          وبتحوّل الوجبة لحكاية حلوة تتكرر.
+        </p>
+
+        <p>
+          اكتشف تجربة المشويات، وتعرّف على الأصناف المتاحة،
+          وتواصل مع المطعم لمعرفة تفاصيل الزيارة والطلب.
+        </p>
+
+        <a href="#menu" class="btn btn-outline">اكتشف المنيو ←</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <div class="eyebrow">اختار اللي بتحبه</div>
+        <h2>منيو المطعم</h2>
+        <div class="gold-line"></div>
+        <p>
+          تصفّح أقسام المنيو. هنضيف الأصناف والأسعار الحقيقية
+          بعد الحصول على قائمة المطعم المعتمدة.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="menu-card reveal">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+            alt="مشويات">
+          <div class="card-content">
+            <h3>المشويات</h3>
+            <p>تشكيلة مشويات على الفحم</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80"
+            alt="أطباق جانبية">
+          <div class="card-content">
+            <h3>الأطباق الجانبية</h3>
+            <p>إضافات تكمل وجبتك</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"
+            alt="سلطات">
+          <div class="card-content">
+            <h3>السلطات</h3>
+            <p>اختيارات خفيفة ومنعشة</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80"
+            alt="مشروبات">
+          <div class="card-content">
+            <h3>المشروبات</h3>
+            <p>اختيارات تناسب وجبتك</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="disclaimer">
+        الصور للتصميم المبدئي وليست صورًا مؤكدة من المطعم.
+        الأصناف والأسعار تحتاج إلى تأكيد.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="feature" id="experience">
+    <div class="feature-content reveal">
+
+      <div class="eyebrow">أجواء الإسكندرية</div>
+
+      <h2>خلي البحر جزء من حكايتك</h2>
+
+      <p>
+        اكتشف أجواء ستانلي، وخطّط لزيارتك.
+        تواصل مع المطعم لتأكيد العنوان الدقيق ومواعيد العمل.
+      </p>
+
+      <a href="#contact" class="btn btn-gold">اعرف مكاننا ←</a>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <div class="eyebrow">إحنا قريبين منك</div>
+        <h2>الموقع والتواصل</h2>
+        <div class="gold-line"></div>
+        <p>
+          بيانات الاتصال ورابط الخريطة هيتضافوا بعد التأكد
+          من المعلومات الرسمية للمطعم.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card reveal">
+          <h3>يسعدنا تواصلك</h3>
+
+          <div class="contact-row">
+            <span>⌖</span>
+            <span>ستانلي، الإسكندرية — العنوان الدقيق قيد التأكيد</span>
+          </div>
+
+          <div class="contact-row">
+            <span>☎</span>
+            <span>رقم الهاتف: يُضاف بعد التأكيد</span>
+          </div>
+
+          <div class="contact-row">
+            <span>◷</span>
+            <span>مواعيد العمل: يُرجى التأكد من المطعم</span>
+          </div>
+
+          <a href="#home" class="btn btn-outline">العودة للأعلى ↑</a>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="map-panel">
+            <div>
+              <h3 class="gold">مشويات أبو أحمد</h3>
+              <p>
+                مكان الخريطة ورابط الاتجاهات هيتضافوا
+                بعد تأكيد الموقع الرسمي.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <div class="footer-inner">
+
+      <a class="logo" href="#home">
+        <span class="logo-symbol">♨</span>
+        <span>
+          مشويات أبو أحمد
+          <small>ABU AHMED GRILLS</small>
+        </span>
+      </a>
+
+      <div class="footer-copy">
+        © <span id="year"></span> مشويات أبو أحمد
+        <br>
+        نموذج موقع تجريبي
+      </div>
+
+      <div class="footer-links">
+        <a href="#contact" aria-label="التواصل">☎</a>
+        <a href="#menu" aria-label="المنيو">≋</a>
+        <a href="#home" aria-label="الرئيسية">↑</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+  const isOpen = navLinks.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".reveal").forEach(function (element) {
+    observer.observe(element);
+  });
+} else {
+  document.querySelectorAll(".reveal").forEach(function (element) {
+    element.classList.add("show");
+  });
+}
+</script>
+
+</body>
+</html>
